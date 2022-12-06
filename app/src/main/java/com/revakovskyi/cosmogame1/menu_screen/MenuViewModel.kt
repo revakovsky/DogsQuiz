@@ -1,4 +1,4 @@
-package com.revakovskyi.cosmogame1
+package com.revakovskyi.cosmogame1.menu_screen
 
 import androidx.lifecycle.ViewModel
 

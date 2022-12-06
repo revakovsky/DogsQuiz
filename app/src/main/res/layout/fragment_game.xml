@@ -3,6 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameFragment">
+    android:background="@color/teal_200"
+    tools:context=".game_screen.GameFragment">
+
+    <Button
+        android:id="@+id/finish_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/finish_game"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/back_to_menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/back_to_menu"
+        android:textAllCaps="false" />
 
 </FrameLayout>
