@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/teal_200"
-    tools:context=".game_screen.GameFragment">
+    tools:context=".gameScreen.GameFragment">
 
     <Button
         android:id="@+id/finish_game_button"
