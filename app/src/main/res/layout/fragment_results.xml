@@ -4,46 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_results"
+    android:background="@color/purple_200"
     tools:context=".resultsScreen.ResultsFragment">
 
     <Button
-        android:id="@+id/back_to_menu_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-        android:layout_margin="30dp"
-        android:layout_marginTop="70dp"
-        android:text="@string/back_to_menu"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/return_button"
-        app:layout_constraintStart_toEndOf="@id/exit_button" />
-
-    <Button
         android:id="@+id/return_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-        android:layout_margin="30dp"
-        android:layout_marginTop="130dp"
+        style="@style/Button"
         android:text="@string/return_to_game"
-        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/back_to_menu_button" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back_to_menu_button"
+        style="@style/Button"
+        android:text="@string/back_to_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/return_button" />
 
     <Button
         android:id="@+id/exit_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|top"
-        android:layout_margin="30dp"
-        android:layout_marginTop="190dp"
+        style="@style/Button"
         android:text="@string/exit"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/back_to_menu_button"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_to_menu_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
