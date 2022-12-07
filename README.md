@@ -1,2 +1,2 @@
-# CosmoGame1
-Casino game with numbers
+# Dogs Quiz
+You need to guess the breed of the current dog in the Quiz
