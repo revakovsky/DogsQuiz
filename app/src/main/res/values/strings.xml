@@ -20,69 +20,73 @@
     <string name="user_description_poor">You don\'t know much about dogs \nTry the quiz again!</string>
 
     <!--    question1-->
-    <string name="option1.1">Golden</string>
-    <string name="option1.2">Horcrux</string>
-    <string name="option1.3">Philosopher</string>
-    <string name="option1.4">Snitch</string>
-    <integer name="correct_answer1">3</integer>
+    <string name="option1.1">Affenpinscher</string>
+    <string name="option1.2">Beauceron</string>
+    <string name="option1.3">Collie</string>
+    <string name="option1.4">Beagle</string>
+    <integer name="correct_answer1">4</integer>
 
     <!--    question2-->
-    <string name="option2.1">Obelisk</string>
-    <string name="option2.2">Basilisk</string>
-    <string name="option2.3">Dobby</string>
-    <string name="option2.4">Ghost</string>
+    <string name="option2.1">Afghan Hound</string>
+    <string name="option2.2">Malinois</string>
+    <string name="option2.3">Malamute</string>
+    <string name="option2.4">Terrier</string>
     <integer name="correct_answer2">2</integer>
 
     <!--    question3-->
-    <string name="option3.1">Brother</string>
-    <string name="option3.2">Father</string>
-    <string name="option3.3">Best friend</string>
-    <string name="option3.4">Godfather</string>
-    <integer name="correct_answer3">4</integer>
+    <string name="option3.1">Briard</string>
+    <string name="option3.2">Chihuahua</string>
+    <string name="option3.3">Bolognese</string>
+    <string name="option3.4">Basenji</string>
+    <integer name="correct_answer3">3</integer>
 
     <!--    question4-->
-    <string name="option4.1">To the portal</string>
-    <string name="option4.2">To the locker room</string>
-    <string name="option4.3">To the Hogsmeade</string>
-    <string name="option4.4">To the bath</string>
+    <string name="option4.1">Boxer</string>
+    <string name="option4.2">Bull Terrier</string>
+    <string name="option4.3">Bulldog</string>
+    <string name="option4.4">Spaniel</string>
     <integer name="correct_answer4">1</integer>
 
     <!--    question5-->
-    <string name="option5.1">Albus Dumbledore</string>
-    <string name="option5.2">Joanne Rowling</string>
-    <string name="option5.3">Harry Potter</string>
-    <string name="option5.4">Draco Malfoy</string>
-    <integer name="correct_answer5">1</integer>
+    <string name="option5.1">Bloodhound</string>
+    <string name="option5.2">Bull Terrier</string>
+    <string name="option5.3">Malamute</string>
+    <string name="option5.4">Pinscher</string>
+    <integer name="correct_answer5">2</integer>
 
     <!--    question6-->
-    <string name="option6.1">Harry Potter</string>
-    <string name="option6.2">Albus Dumbledore</string>
-    <string name="option6.3">Severus Snape</string>
-    <string name="option6.4">Ron Weasley</string>
-    <integer name="correct_answer6">3</integer>
+    <string name="option6.1">Affenpinscher</string>
+    <string name="option6.2">Foxhound</string>
+    <string name="option6.3">Terrier</string>
+    <string name="option6.4">French Bulldog</string>
+    <integer name="correct_answer6">4</integer>
 
     <!--    question7-->
-    <string name="option7.1">Resurrection stone</string>
-    <string name="option7.2">The cloak of invisibility</string>
-    <string name="option7.3">Elder wand</string>
-    <string name="option7.4">Opal necklace</string>
+    <string name="option7.1">Chihuahua</string>
+    <string name="option7.2">Spitz</string>
+    <string name="option7.3">Shibu Inu</string>
+    <string name="option7.4">Akita</string>
+    <integer name="correct_answer7">1</integer>
 
     <!--    question8-->
-    <string name="option8.1">Resurrection stone</string>
-    <string name="option8.2">The cloak of invisibility</string>
-    <string name="option8.3">Elder wand</string>
-    <string name="option8.4">Opal necklace</string>
+    <string name="option8.1">Spaniel</string>
+    <string name="option8.2">Chihuahua</string>
+    <string name="option8.3">Chow Chow</string>
+    <string name="option8.4">Bulldog</string>
+    <integer name="correct_answer8">3</integer>
 
     <!--    question9-->
-    <string name="option9.1">Resurrection stone</string>
-    <string name="option9.2">The cloak of invisibility</string>
-    <string name="option9.3">Elder wand</string>
-    <string name="option9.4">Opal necklace</string>
+    <string name="option9.1">Mastiff</string>
+    <string name="option9.2">Boxer</string>
+    <string name="option9.3">Bulldog</string>
+    <string name="option9.4">Shibu Inu</string>
+    <integer name="correct_answer9">1</integer>
 
     <!--    question10-->
-    <string name="option10.1">Resurrection stone</string>
-    <string name="option10.2">The cloak of invisibility</string>
-    <string name="option10.3">Elder wand</string>
-    <string name="option10.4">Opal necklace</string>
+    <string name="option10.1">Basenji</string>
+    <string name="option10.2">Pug</string>
+    <string name="option10.3">Beagle</string>
+    <string name="option10.4">Pinscher</string>
+    <integer name="correct_answer10">2</integer>
 
 </resources>

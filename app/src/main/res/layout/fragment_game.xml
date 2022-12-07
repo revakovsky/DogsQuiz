@@ -47,7 +47,7 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/dog_image"
                 android:scaleType="centerCrop"
-                android:src="@drawable/dog_image"
+                android:src="@drawable/dog1_beagle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/game_title" />
@@ -102,7 +102,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/option_one"
             app:layout_constraintTop_toTopOf="@+id/option_one"
-            tools:text="@string/option1.2" />
+            tools:text="@string/option6.4" />
 
         <TextView
             android:id="@+id/option_three"
