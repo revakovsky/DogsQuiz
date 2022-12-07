@@ -9,5 +9,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#FFC107</color>
+    <color name="button">#2A1252</color>
+    <color name="progress">#A12ECE</color>
+    <color name="red">#800303</color>
+    <color name="green">#039709</color>
 
 </resources>

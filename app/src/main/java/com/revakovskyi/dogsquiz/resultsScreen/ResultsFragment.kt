@@ -1,12 +1,12 @@
 package com.revakovskyi.dogsquiz.resultsScreen
 
-import android.app.AlertDialog
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.revakovskyi.dogsquiz.R
 import com.revakovskyi.dogsquiz.databinding.FragmentResultsBinding
+import com.revakovskyi.dogsquiz.utils.setExitAlertDialog
 
 class ResultsFragment : Fragment(R.layout.fragment_results) {
 
@@ -17,25 +17,12 @@ class ResultsFragment : Fragment(R.layout.fragment_results) {
         binding = FragmentResultsBinding.bind(view)
 
         binding.apply {
-            backToMenuButton.setOnClickListener {
+            returnButton.setOnClickListener {
                 findNavController().popBackStack(R.id.menuFragment, false)
             }
 
-            returnButton.setOnClickListener {
-                findNavController().popBackStack()
-            }
-
-            exitButton.setOnClickListener {
-                AlertDialog.Builder(requireContext())
-                    .setTitle(R.string.exit_big)
-                    .setIcon(R.drawable.cancel)
-                    .setMessage(R.string.want_to_leave)
-                    .setPositiveButton(R.string.yes) { _, _ ->
-                        requireActivity().finish()
-                    }
-                    .setNegativeButton(R.string.no, null)
-                    .create()
-                    .show()
+            exitResultsButton.setOnClickListener {
+                setExitAlertDialog()
             }
         }
     }

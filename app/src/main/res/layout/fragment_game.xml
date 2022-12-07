@@ -1,27 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/question_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:fillViewport="true"
     tools:context=".gameScreen.GameFragment">
 
-    <Button
-        android:id="@+id/finish_game_button"
-        style="@style/Button"
-        android:text="@string/finish_game"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_to_menu_button" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:paddingBottom="100dp"
+        tools:context=".gameScreen.GameFragment">
 
-    <Button
-        android:id="@+id/back_to_menu_button"
-        style="@style/Button"
-        android:text="@string/back_to_menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/game_title"
+            style="@style/Text_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="@dimen/margin_title_50dp"
+            android:layout_marginEnd="@dimen/margin_title_50dp"
+            android:fontFamily="@font/irish_grover"
+            android:text="@string/game_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:elevation="3dp"
+            app:cardCornerRadius="@dimen/margin_big_30dp"
+            app:cardElevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_title">
+
+            <ImageView
+                android:id="@+id/dog_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/dog_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dog_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/game_title" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_big_30dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:background="@color/progress"
+            android:indeterminate="false"
+            android:max="10"
+            android:minHeight="10dp"
+            android:progress="0"
+            android:progressTint="@color/yellow"
+            app:layout_constraintEnd_toStartOf="@+id/progress_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/progress_text"
+            style="@style/Text_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/margin_big_30dp"
+            android:fontFamily="@font/irish_grover"
+            android:text="1/10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/progress_bar"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/option_one"
+            style="@style/TextView_Option"
+            android:layout_marginTop="@dimen/margin_big_30dp"
+            android:fontFamily="@font/irish_grover"
+            app:layout_constraintEnd_toStartOf="@id/option_two"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress_bar"
+            tools:text="@string/option1.1" />
+
+        <TextView
+            android:id="@+id/option_two"
+            style="@style/TextView_Option"
+            android:fontFamily="@font/irish_grover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/option_one"
+            app:layout_constraintTop_toTopOf="@+id/option_one"
+            tools:text="@string/option1.2" />
+
+        <TextView
+            android:id="@+id/option_three"
+            style="@style/TextView_Option"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:fontFamily="@font/irish_grover"
+            app:layout_constraintEnd_toStartOf="@id/option_four"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option_one"
+            tools:text="@string/option1.3" />
+
+        <TextView
+            android:id="@+id/option_four"
+            style="@style/TextView_Option"
+            android:fontFamily="@font/irish_grover"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/option_three"
+            app:layout_constraintTop_toTopOf="@id/option_three"
+            tools:text="@string/option1.4" />
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/Button"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/irish_grover"
+            android:text="@string/submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option_three" />
+
+        <Button
+            android:id="@+id/back_to_menu_button"
+            style="@style/Button"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:fontFamily="@font/irish_grover"
+            android:text="@string/back_to_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submit_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

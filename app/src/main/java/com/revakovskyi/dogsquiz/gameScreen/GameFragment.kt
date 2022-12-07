@@ -16,7 +16,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
         binding = FragmentGameBinding.bind(view)
 
         binding.apply {
-            finishGameButton.setOnClickListener {
+            submitButton.setOnClickListener {
                 findNavController().navigate(R.id.action_gameFragment_to_resultsFragment)
             }
 

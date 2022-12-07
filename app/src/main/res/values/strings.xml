@@ -1,13 +1,88 @@
 <resources>
     <string name="app_name">Dogs Quiz</string>
-    <string name="finish_game">finish game</string>
-    <string name="back_to_menu">back to menu</string>
-    <string name="start_game">start game</string>
-    <string name="exit">exit</string>
-    <string name="new_game">start new game</string>
-    <string name="return_to_game">return to game</string>
-    <string name="exit_big">Exit</string>
+    <string name="finish_game">Finish Quiz</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="start_game">Start Quiz</string>
+    <string name="exit">Exit</string>
     <string name="want_to_leave">Do you want to leave the Quiz?</string>
-    <string name="yes">yes</string>
-    <string name="no">no</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="main_title">Try to guess the breed of the dog!</string>
+    <string name="game_title">What breed is this dog?</string>
+    <string name="dog_image">dog image</string>
+    <string name="submit">Submit</string>
+    <string name="congratulations">Congratulations!!!</string>
+    <string name="confetti">confetti</string>
+    <string name="cub_icon">cub icon</string>
+    <string name="user_score_text">You guessed it \n5 times out of 10!</string>
+    <string name="user_description_perfect">You are best with dogs! \nKeep on this!</string>
+    <string name="user_description_good">You are good with dogs! \nBut you can do better!</string>
+    <string name="user_description_poor">You don\'t know much about dogs \nTry the quiz again!</string>
+
+    <!--    question1-->
+    <string name="option1.1">Golden</string>
+    <string name="option1.2">Horcrux</string>
+    <string name="option1.3">Philosopher</string>
+    <string name="option1.4">Snitch</string>
+    <integer name="correct_answer1">3</integer>
+
+    <!--    question2-->
+    <string name="option2.1">Obelisk</string>
+    <string name="option2.2">Basilisk</string>
+    <string name="option2.3">Dobby</string>
+    <string name="option2.4">Ghost</string>
+    <integer name="correct_answer2">2</integer>
+
+    <!--    question3-->
+    <string name="option3.1">Brother</string>
+    <string name="option3.2">Father</string>
+    <string name="option3.3">Best friend</string>
+    <string name="option3.4">Godfather</string>
+    <integer name="correct_answer3">4</integer>
+
+    <!--    question4-->
+    <string name="option4.1">To the portal</string>
+    <string name="option4.2">To the locker room</string>
+    <string name="option4.3">To the Hogsmeade</string>
+    <string name="option4.4">To the bath</string>
+    <integer name="correct_answer4">1</integer>
+
+    <!--    question5-->
+    <string name="option5.1">Albus Dumbledore</string>
+    <string name="option5.2">Joanne Rowling</string>
+    <string name="option5.3">Harry Potter</string>
+    <string name="option5.4">Draco Malfoy</string>
+    <integer name="correct_answer5">1</integer>
+
+    <!--    question6-->
+    <string name="option6.1">Harry Potter</string>
+    <string name="option6.2">Albus Dumbledore</string>
+    <string name="option6.3">Severus Snape</string>
+    <string name="option6.4">Ron Weasley</string>
+    <integer name="correct_answer6">3</integer>
+
+    <!--    question7-->
+    <string name="option7.1">Resurrection stone</string>
+    <string name="option7.2">The cloak of invisibility</string>
+    <string name="option7.3">Elder wand</string>
+    <string name="option7.4">Opal necklace</string>
+
+    <!--    question8-->
+    <string name="option8.1">Resurrection stone</string>
+    <string name="option8.2">The cloak of invisibility</string>
+    <string name="option8.3">Elder wand</string>
+    <string name="option8.4">Opal necklace</string>
+
+    <!--    question9-->
+    <string name="option9.1">Resurrection stone</string>
+    <string name="option9.2">The cloak of invisibility</string>
+    <string name="option9.3">Elder wand</string>
+    <string name="option9.4">Opal necklace</string>
+
+    <!--    question10-->
+    <string name="option10.1">Resurrection stone</string>
+    <string name="option10.2">The cloak of invisibility</string>
+    <string name="option10.3">Elder wand</string>
+    <string name="option10.4">Opal necklace</string>
+
 </resources>
