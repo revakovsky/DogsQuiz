@@ -1,12 +1,9 @@
-package com.revakovskyi.cosmogame1
+package com.revakovskyi.dogsquiz
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import com.revakovskyi.cosmogame1.databinding.ActivityMainBinding
-import com.revakovskyi.cosmogame1.databinding.FragmentResultsBinding
+import com.revakovskyi.dogsquiz.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

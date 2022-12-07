@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">Cosmo Game</string>
+    <string name="app_name">Dogs Quiz</string>
     <string name="finish_game">finish game</string>
     <string name="back_to_menu">back to menu</string>
     <string name="start_game">start game</string>
     <string name="exit">exit</string>
     <string name="new_game">start new game</string>
     <string name="return_to_game">return to game</string>
+    <string name="exit_big">Exit</string>
+    <string name="want_to_leave">Do you want to leave the Quiz?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
 </resources>
