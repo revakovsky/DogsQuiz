@@ -1,4 +1,4 @@
-package com.revakovskyi.dogsquiz.menuScreen
+package com.revakovskyi.dogsquiz.fragments
 
 import android.os.Bundle
 import android.view.View

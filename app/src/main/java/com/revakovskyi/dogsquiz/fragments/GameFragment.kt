@@ -1,4 +1,4 @@
-package com.revakovskyi.dogsquiz.gameScreen
+package com.revakovskyi.dogsquiz.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.revakovskyi.dogsquiz.R
@@ -174,7 +175,10 @@ class GameFragment : Fragment(R.layout.fragment_game) {
         currentQuestionNumber = 1
         questionId = 1
 
-        findNavController().navigate(R.id.action_gameFragment_to_resultsFragment)
+        findNavController().navigate(
+            R.id.action_gameFragment_to_resultsFragment,
+            bundleOf("result" to totalCorrectAnswers)
+        )
     }
 
     private fun setButtonsAction() {

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_500"
-    tools:context=".resultsScreen.ResultsFragment">
+    tools:context=".fragments.ResultsFragment">
 
     <ImageView
         android:id="@+id/imageView"
@@ -81,7 +81,6 @@
         android:layout_marginTop="@dimen/margin_15dp"
         android:layout_marginEnd="@dimen/margin_big_30dp"
         android:fontFamily="@font/irish_grover"
-        android:padding="@dimen/margin_15dp"
         android:text="@string/user_description_perfect"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -92,7 +91,7 @@
     <Button
         android:id="@+id/return_button"
         style="@style/Button"
-        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/irish_grover"
         android:text="@string/back_to_menu"
         app:layout_constraintEnd_toEndOf="parent"

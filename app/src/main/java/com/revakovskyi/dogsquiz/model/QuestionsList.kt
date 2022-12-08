@@ -123,6 +123,9 @@ class QuestionsList(context: Context) {
     companion object {
         const val MAX_AMOUNT_OF_QUESTIONS = 10
 
+        const val PERFECT_KNOWLEDGE_LEVEL = 7
+        const val GOOD_KNOWLEDGE_LEVEL = 4
+
         const val CHOOSING_OPTION_1 = 1
         const val CHOOSING_OPTION_2 = 2
         const val CHOOSING_OPTION_3 = 3
