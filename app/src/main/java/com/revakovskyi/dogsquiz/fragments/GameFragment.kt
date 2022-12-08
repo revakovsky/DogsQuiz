@@ -133,7 +133,6 @@ class GameFragment : Fragment(R.layout.fragment_game) {
             chooseButtonText()
 
         } else {
-            toast?.cancel()
             askToChooseSomething()
         }
     }
@@ -174,6 +173,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
 
     private fun askToChooseSomething() {
         if (counter == currentQuestionNumber) {
+            toast?.cancel()
             toast = makeToast(R.string.make_choice)
             toast?.show()
         }
