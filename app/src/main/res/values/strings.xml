@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Dogs Quiz</string>
+    <string name="finish_quiz">Finish Quiz</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="start_game">Start Quiz</string>
+    <string name="exit">Exit</string>
+    <string name="want_to_leave">Do you want to leave the Quiz?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="main_title">Try to guess the breed of the dog!</string>
+    <string name="game_title">What breed is this dog?</string>
+    <string name="dog_image">dog image</string>
+    <string name="submit">Submit</string>
+    <string name="next_question">Next question</string>
+    <string name="make_choice">Please, choose one option</string>
+    <string name="congratulations">Congratulations!!!</string>
+    <string name="confetti">confetti</string>
+    <string name="cub_icon">cub icon</string>
+    <string name="user_score_text">You guessed it \n5 times out of 10!</string>
+    <string name="user_description_perfect">You are best with dogs! \nKeep on this!</string>
+    <string name="user_description_good">You are good with dogs! \nBut you can do better!</string>
+    <string name="user_description_poor">You don\'t know much about dogs \nTry the quiz again!</string>
+
+    <!--    question1-->
+    <string name="option1.1">Affenpinscher</string>
+    <string name="option1.2">Beauceron</string>
+    <string name="option1.3">Collie</string>
+    <string name="option1.4">Beagle</string>
+    <integer name="correct_answer1">4</integer>
+
+    <!--    question2-->
+    <string name="option2.1">Afghan Hound</string>
+    <string name="option2.2">Malinois</string>
+    <string name="option2.3">Malamute</string>
+    <string name="option2.4">Terrier</string>
+    <integer name="correct_answer2">2</integer>
+
+    <!--    question3-->
+    <string name="option3.1">Briard</string>
+    <string name="option3.2">Chihuahua</string>
+    <string name="option3.3">Bolognese</string>
+    <string name="option3.4">Basenji</string>
+    <integer name="correct_answer3">3</integer>
+
+    <!--    question4-->
+    <string name="option4.1">Boxer</string>
+    <string name="option4.2">Bull Terrier</string>
+    <string name="option4.3">Bulldog</string>
+    <string name="option4.4">Spaniel</string>
+    <integer name="correct_answer4">1</integer>
+
+    <!--    question5-->
+    <string name="option5.1">Bloodhound</string>
+    <string name="option5.2">Bull Terrier</string>
+    <string name="option5.3">Malamute</string>
+    <string name="option5.4">Pinscher</string>
+    <integer name="correct_answer5">2</integer>
+
+    <!--    question6-->
+    <string name="option6.1">Affenpinscher</string>
+    <string name="option6.2">Foxhound</string>
+    <string name="option6.3">Terrier</string>
+    <string name="option6.4">French Bulldog</string>
+    <integer name="correct_answer6">4</integer>
+
+    <!--    question7-->
+    <string name="option7.1">Chihuahua</string>
+    <string name="option7.2">Spitz</string>
+    <string name="option7.3">Shibu Inu</string>
+    <string name="option7.4">Akita</string>
+    <integer name="correct_answer7">1</integer>
+
+    <!--    question8-->
+    <string name="option8.1">Spaniel</string>
+    <string name="option8.2">Chihuahua</string>
+    <string name="option8.3">Chow Chow</string>
+    <string name="option8.4">Bulldog</string>
+    <integer name="correct_answer8">3</integer>
+
+    <!--    question9-->
+    <string name="option9.1">Mastiff</string>
+    <string name="option9.2">Boxer</string>
+    <string name="option9.3">Bulldog</string>
+    <string name="option9.4">Shibu Inu</string>
+    <integer name="correct_answer9">1</integer>
+
+    <!--    question10-->
+    <string name="option10.1">Basenji</string>
+    <string name="option10.2">Pug</string>
+    <string name="option10.3">Beagle</string>
+    <string name="option10.4">Pinscher</string>
+    <integer name="correct_answer10">2</integer>
+
+</resources>
