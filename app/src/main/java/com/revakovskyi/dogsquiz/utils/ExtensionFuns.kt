@@ -18,6 +18,6 @@ fun Fragment.setExitAlertDialog() {
         .show()
 }
 
-fun Fragment.makeToast(textResource: Int) {
-    Toast.makeText(requireActivity(), textResource, Toast.LENGTH_LONG).show()
+fun Fragment.makeToast(textResource: Int): Toast {
+    return Toast.makeText(requireActivity(), textResource, Toast.LENGTH_LONG)
 }

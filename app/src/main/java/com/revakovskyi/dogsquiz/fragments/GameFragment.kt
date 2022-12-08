@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -38,6 +39,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
     private var optionsList = ArrayList<TextView>()
     private val maxAmountOfQuestions = QuestionsList.MAX_AMOUNT_OF_QUESTIONS
     private var totalCorrectAnswers: String = ""
+    private var toast: Toast? = null
 
     private var counter = 1
     private var rightChoice = 0
@@ -114,7 +116,6 @@ class GameFragment : Fragment(R.layout.fragment_game) {
 
     private fun setUpAction() {
         if (questionId != currentQuestionNumber) selectedOptionNumber = 0
-
         if (selectedOptionNumber == 0) showNewQuestions()
         else checkAnswer()
     }
@@ -122,6 +123,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
     private fun showNewQuestions() {
         createQuestion()
         appearanceUtils?.setDefaultOptionLook(optionsList)
+        appearanceUtils?.makeOptionsClickable(optionsList)
         chooseButtonText()
 
         if (appearanceUtils?.isOptionActivated(optionsList) == true) {
@@ -130,7 +132,10 @@ class GameFragment : Fragment(R.layout.fragment_game) {
             counter++
             chooseButtonText()
 
-        } else askToChooseSomething()
+        } else {
+            toast?.cancel()
+            askToChooseSomething()
+        }
     }
 
     private fun checkAnswer() {
@@ -146,9 +151,9 @@ class GameFragment : Fragment(R.layout.fragment_game) {
     private fun checkAnswerWithSelected(correctAnswer: Int) {
         if (correctAnswer != selectedOptionNumber) {
             appearanceUtils?.setAnsweredOptionLook(
-                selectedOptionNumber,
-                R.drawable.incorrect_option_bg,
-                optionsList
+                answer = selectedOptionNumber,
+                drawableResource = R.drawable.incorrect_option_bg,
+                optionsList = optionsList
             )
         } else {
             rightChoice++
@@ -158,6 +163,7 @@ class GameFragment : Fragment(R.layout.fragment_game) {
             R.drawable.correct_option_bg,
             optionsList
         )
+        appearanceUtils?.makeOptionsUnclickable(optionsList)
     }
 
     private fun selectedOptionLook(fieldOption: TextView, optionNumber: Int) {
@@ -167,7 +173,10 @@ class GameFragment : Fragment(R.layout.fragment_game) {
     }
 
     private fun askToChooseSomething() {
-        if (counter == currentQuestionNumber) makeToast(R.string.make_choice)
+        if (counter == currentQuestionNumber) {
+            toast = makeToast(R.string.make_choice)
+            toast?.show()
+        }
         counter = questionId
     }
 

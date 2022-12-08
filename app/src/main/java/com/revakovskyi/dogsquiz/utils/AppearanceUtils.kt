@@ -18,6 +18,18 @@ class AppearanceUtils(private val context: Context) {
         }
     }
 
+    fun makeOptionsClickable(optionsList: List<TextView>) {
+        for (option in optionsList) {
+            option.isClickable = true
+        }
+    }
+
+    fun makeOptionsUnclickable(optionsList: List<TextView>) {
+        for (option in optionsList) {
+            option.isClickable = false
+        }
+    }
+
     fun setStyle(fieldOption: TextView, drawableResource: Int) {
         fieldOption.background = getOptionBackground(drawableResource)
     }
